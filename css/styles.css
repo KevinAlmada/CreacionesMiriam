@@ -21,10 +21,14 @@ body{
 header a{
     padding: 3px;
     display: block;
-    text-decoration: none;
     padding-top:15px;
     font-size: 20px;
     color: #872720;
+    text-decoration: none;
+    background-position: 0% 100%;
+   /*  background-repeat: no-repeat; */
+    background-size: 0% 2px;
+    transition: background-size .3s;
     
 }
 header{
@@ -38,6 +42,12 @@ footer{
 }
 footer h4{
     padding-bottom: 20px;
+    font-family: 'Mali', cursive;
+    color:#872720;
+    font-size: 30px;
+    height: 30px;
+    background-color: rgba(188, 97, 97, 0.66);
+    margin-bottom: 30px;
 }
 .ico{
     display: inline;
@@ -45,25 +55,40 @@ footer h4{
 
 #whastapp a img {
     padding: 3px;
-    width: 20px;
+    width: 30px;
     background-color: #25d366;
     border-radius: 5px;
     border: solid 1px black;
 }
 #facebook a img {
     padding: 3px;
-    width: 20px;
+    width: 30px;
     background-color: #1877f2 ;
     border-radius: 5px;
     border:solid black 1px;
 }
 #mail a img {
-    width: 20px;
+    width: 30px;
     border-radius: 5px;
     border:solid black 1px;
     background-color: #e4002b ;
     padding: 3px;
 }
 .anchors:hover{
-    border-bottom: #872720 2px solid;
+    background-size: 100% 2px;
+}
+.ico a  :hover{
+    box-shadow: 5px 5px 1px black;
+}
+
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    /* transition: background-size .3s; */
+}
+.logo img :hover{
+    
 }
